@@ -4,4 +4,6 @@ var m = d.getMinutes();
 var s = d.getSeconds();
 var day = d.getDay();
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-console.log(days[day] + " - " + h + ":" + m + ":" + s);
+var month = d.getMonth();
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+console.log(month + " - " + days[day] + " - " + h + ":" + m + ":" + s);
