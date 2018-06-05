@@ -4,4 +4,7 @@ var m = d.getMinutes();
 var s = d.getSeconds();
 var day = d.getDay();
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-console.log(day + " - " + h + ":" + m + ":" + s);
+console.log(days[day] + " - " + h + ":" + m + ":" + s);
+
+
+days[d.getDay()]
