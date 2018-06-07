@@ -11,10 +11,10 @@ var months = ["January", "February", "March", "April", "May", "June", "July", "A
 //Get civilian timeout
 function ampm(c) {
   if (c <= 12) {
-    return "am";
+    return "AM";
   }
   else {
-    return "pm";
+    return "PM";
   }
 }
 
