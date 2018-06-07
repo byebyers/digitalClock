@@ -6,4 +6,17 @@ var day = d.getDay();
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 var month = d.getMonth();
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+
+//Get civilian timeout
+function ampm(c) {
+  if (c <= 12) {
+    return "am";
+  }
+  else {
+    return "pm";
+  }
+}
+
+console.log(ampm(h));
 console.log(months[month] + " - " + days[day] + " - " + h + ":" + m + ":" + s);
