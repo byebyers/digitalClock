@@ -19,6 +19,6 @@ function ampm(c) {
   }
 }
 
-console.log(dom);
+
 console.log(ampm(h));
-console.log(months[month] + " - " + days[day] + " - " + h + ":" + m + " " + ampm(h));
+console.log(months[month] + " " + dom + " - " + days[day] + " - " + h + ":" + m + " " + ampm(h));
