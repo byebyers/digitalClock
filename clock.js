@@ -19,4 +19,4 @@ function ampm(c) {
 }
 
 console.log(ampm(h));
-console.log(months[month] + " - " + days[day] + " - " + h + ":" + m + ":" + s);
+console.log(months[month] + " - " + days[day] + " - " + h + ":" + m + " " + ampm(h));
