@@ -20,7 +20,14 @@ function ampm(c) {
 }
 
 //Get Civilian time
-
+function civil(t) {
+  if (t <= 12) {
+    return t;
+  }
+  else {
+    return "After 12";
+  }
+}
 
 
 console.log(ampm(h));
