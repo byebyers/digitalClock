@@ -29,6 +29,6 @@ function civil(t) {
   }
 }
 
-
+console.log(civil(h));
 console.log(ampm(h));
 console.log(months[month] + " " + dom + " - " + days[day] + " - " + h + ":" + m + " " + ampm(h));
