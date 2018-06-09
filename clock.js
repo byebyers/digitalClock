@@ -9,7 +9,7 @@ var month = d.getMonth(); //Get month number of the year
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 
-//Get civilian timeout
+//Get am/pm
 function ampm(c) {
   if (c <= 12) {
     return "AM";
@@ -18,6 +18,9 @@ function ampm(c) {
     return "PM";
   }
 }
+
+//Get Civilian time
+
 
 
 console.log(ampm(h));
