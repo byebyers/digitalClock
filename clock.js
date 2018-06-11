@@ -29,6 +29,8 @@ function civil(t) {
   }
 }
 
+setInterval(function(){clockTick();}, 1000);
+
 console.log(civil(h));
 console.log(ampm(h));
 console.log(months[month] + " " + dom + " - " + days[day] + " - " + h + ":" + m + ":" + s + " " + ampm(h));
