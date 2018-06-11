@@ -25,10 +25,10 @@ function civil(t) {
     return t;
   }
   else {
-    return "After 12";
+    return t - 12;
   }
 }
 
 console.log(civil(h));
 console.log(ampm(h));
-console.log(months[month] + " " + dom + " - " + days[day] + " - " + h + ":" + m + " " + ampm(h));
+console.log(months[month] + " " + dom + " - " + days[day] + " - " + h + ":" + m + ":" + s + " " + ampm(h));
