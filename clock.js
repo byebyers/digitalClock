@@ -29,6 +29,15 @@ function civil(t) {
   }
 }
 
+function clockTick()    {
+       currentTime = new Date();
+       month = currentTime.getMonth() + 1;
+       day = currentTime.getDate();
+       year = currentTime.getFullYear();
+      // alert("hi");
+      document.getElementById('date').innerHTML=month + "/" + day + "/" + year;
+    }
+
 setInterval(function(){clockTick();}, 1000);
 
 console.log(civil(h));
