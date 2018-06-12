@@ -29,6 +29,15 @@ function civil(t) {
   }
 }
 
+function doubled(s) { //takes in seconds to make sure it is 2 digits.
+  if (s < 10) {
+    return "0" + s;
+  }
+  else {
+    return s;
+  }
+}
+
 function insertClock()    {
        currentTime = new Date();
        month = currentTime.getMonth() + 1;
@@ -38,14 +47,7 @@ function insertClock()    {
       document.getElementById('date').innerHTML=month + "/" + day + "/" + year;
     }
 
-function doubled(s) { //takes in seconds to make sure it is 2 digits.
-  if (s < 10) {
-    return "0" + s;
-  }
-  else {
-    return s;
-  }
-}
+
 
 //setInterval(function(){clockTick();}, 1000);
 
