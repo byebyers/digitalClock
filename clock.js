@@ -38,8 +38,8 @@ function insertClock()    {
       document.getElementById('date').innerHTML=month + "/" + day + "/" + year;
     }
 
-setInterval(function(){clockTick();}, 1000);
+//setInterval(function(){clockTick();}, 1000);
 
 console.log(civil(h));
 console.log(ampm(h));
-console.log(months[month] + " " + dom + " - " + days[day] + " - " + h + ":" + m + ":" + s + " " + ampm(h));
+console.log(months[month] + " " + dom + " - " + days[day] + " - " + civil(h) + ":" + m + ":" + s + " " + ampm(h));
