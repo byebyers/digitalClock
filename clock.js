@@ -29,7 +29,7 @@ function civil(t) {
   }
 }
 
-function clockTick()    {
+function insertClock()    {
        currentTime = new Date();
        month = currentTime.getMonth() + 1;
        day = currentTime.getDate();
