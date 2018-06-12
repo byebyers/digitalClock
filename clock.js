@@ -38,8 +38,17 @@ function insertClock()    {
       document.getElementById('date').innerHTML=month + "/" + day + "/" + year;
     }
 
+function doubled(s) { //takes in seconds to make sure it is 2 digits.
+  if (s < 10) {
+    return "0" + s;
+  }
+  else {
+    return s;
+  }
+}
+
 //setInterval(function(){clockTick();}, 1000);
 
 console.log(civil(h));
 console.log(ampm(h));
-console.log(months[month] + " " + dom + " - " + days[day] + " - " + civil(h) + ":" + m + ":" + s + " " + ampm(h));
+console.log(months[month] + " " + dom + " - " + days[day] + " - " + civil(h) + ":" + m + ":" + doubled(s) + " " + ampm(h));
