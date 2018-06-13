@@ -39,18 +39,11 @@ function doubled(s) { //takes in seconds to make sure it is 2 digits.
 }
 
 function insertClock()    {
-       currentTime = new Date();
-       month = currentTime.getMonth() + 1;
-       day = currentTime.getDate();
-       year = currentTime.getFullYear();
-      // alert("hi");
-      document.getElementById('date').innerHTML=month + "/" + day + "/" + year;
+      console.log(months[month] + " " + dom + " - " + days[day] + " - " + civil(h) + ":" + m + ":" + doubled(s) + " " + ampm(h));
     }
 
 
 
 //setInterval(function(){clockTick();}, 1000);
 
-console.log(civil(h));
-console.log(ampm(h));
-console.log(months[month] + " " + dom + " - " + days[day] + " - " + civil(h) + ":" + m + ":" + doubled(s) + " " + ampm(h));
+insertClock();
