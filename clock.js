@@ -39,11 +39,9 @@ function doubled(s) { //takes in seconds to make sure it is 2 digits.
 }
 
 function insertClock()    {
-      console.log(months[month] + " " + dom + " - " + days[day] + " - " + civil(h) + ":" + m + ":" + doubled(s) + " " + ampm(h));
+      return months[month] + " " + dom + " - " + days[day] + " - " + civil(h) + ":" + m + ":" + doubled(s) + " " + ampm(h);
     }
 
 
 
-//setInterval(function(){clockTick();}, 1000);
-
-insertClock();
+setInterval(function(){insertClock();}, 1000);
