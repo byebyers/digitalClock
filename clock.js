@@ -39,7 +39,8 @@ function doubled(s) { //takes in seconds to make sure it is 2 digits.
 }
 
 function insertClock()    {
-      document.getElementById("clock").innerHTML = months[month] + " " + dom + " - " + days[day] + " - " + civil(h) + ":" + doubled(m) + ":" + doubled(s) + " " + ampm(h);
+      var time = months[month] + " " + dom + " - " + days[day] + " - " + civil(h) + ":" + doubled(m) + ":" + doubled(s) + " " + ampm(h);
+      document.getElementById("clock").innerHTML = time;
     }
 //months[month] + " " + dom + " - " + days[day] + " - " + civil(h) + ":" + m + ":" + doubled(s) + " " + ampm(h);
 
