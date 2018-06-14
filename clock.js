@@ -39,9 +39,9 @@ function doubled(s) { //takes in seconds to make sure it is 2 digits.
 }
 
 function insertClock()    {
-      return months[month] + " " + dom + " - " + days[day] + " - " + civil(h) + ":" + m + ":" + doubled(s) + " " + ampm(h);
+      document.getElementById("clock").innerHTML = months[month] + " " + dom + " - " + days[day] + " - " + civil(h) + ":" + doubled(m) + ":" + doubled(s) + " " + ampm(h);
     }
+//months[month] + " " + dom + " - " + days[day] + " - " + civil(h) + ":" + m + ":" + doubled(s) + " " + ampm(h);
 
 
-
-setInterval(function(){insertClock();}, 1000);
+setInterval(function() { insertClock(); }, 1000);

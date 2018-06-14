@@ -47,3 +47,8 @@ function updateRecords(id, prop, value) {
 
 // Alter values below to test your code
 updateRecords(2548, "tracks", "");
+
+
+for (var i = 1; i < 6; i++) {
+    ourArray.push(i);
+}
