@@ -9,6 +9,28 @@ var month = d.getMonth(); //Get month number of the year
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('clock').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+
+/*! function insertClock()    {
+      var time = months[month] + " " + dom + " - " + days[day] + " - " + civil(h) + ":" + doubled(m) + ":" + doubled(s) + " " + ampm(h);
+      document.querySelector(".clock").innerHTML = time;
+      var t = setTimeout(insertClock, 500);
+    }
+*/
 //Get am/pm
 function ampm(c) {
   if (c <= 12) {
@@ -38,12 +60,5 @@ function doubled(s) { //takes in seconds to make sure it is 2 digits.
   }
 }
 
-function insertClock()    {
-      var time = months[month] + " " + dom + " - " + days[day] + " - " + civil(h) + ":" + doubled(m) + ":" + doubled(s) + " " + ampm(h);
-      document.querySelector(".clock").innerHTML = time;
-      setTimeout(function() { insertClock(); }, 1000);
-    }
+
 //months[month] + " " + dom + " - " + days[day] + " - " + civil(h) + ":" + m + ":" + doubled(s) + " " + ampm(h);
-
-
-insertClock();
