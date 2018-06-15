@@ -46,7 +46,7 @@ function updateRecords(id, prop, value) {
 }
 
 // Alter values below to test your code
-updateRecords(2548, "tracks", "");
+updateRecords(5439, "tracks", "dd");
 
 
 for (var i = 1; i < 6; i++) {
