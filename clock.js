@@ -8,7 +8,6 @@ var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "S
 var month = d.getMonth(); //Get month number of the year
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-
 function startTime() {
     var today = new Date();
     var h = today.getHours();
@@ -25,12 +24,13 @@ function checkTime(i) {
     return i;
 }
 
-/*! function insertClock()    {
+/*!
+function insertClock()    {
       var time = months[month] + " " + dom + " - " + days[day] + " - " + civil(h) + ":" + doubled(m) + ":" + doubled(s) + " " + ampm(h);
       document.querySelector(".clock").innerHTML = time;
       var t = setTimeout(insertClock, 500);
     }
-*/
+
 //Get am/pm
 function ampm(c) {
   if (c <= 12) {
@@ -59,6 +59,6 @@ function doubled(s) { //takes in seconds to make sure it is 2 digits.
     return s;
   }
 }
-
+*/
 
 //months[month] + " " + dom + " - " + days[day] + " - " + civil(h) + ":" + m + ":" + doubled(s) + " " + ampm(h);
