@@ -40,9 +40,10 @@ function doubled(s) { //takes in seconds to make sure it is 2 digits.
 
 function insertClock()    {
       var time = months[month] + " " + dom + " - " + days[day] + " - " + civil(h) + ":" + doubled(m) + ":" + doubled(s) + " " + ampm(h);
-      document.getElementById("clock").innerHTML = time;
+      document.querySelector(".clock").innerHTML = time;
+      setTimeout(function() { insertClock(); }, 1000);
     }
 //months[month] + " " + dom + " - " + days[day] + " - " + civil(h) + ":" + m + ":" + doubled(s) + " " + ampm(h);
 
 
-setInterval(function() { insertClock(); }, 1000);
+insertClock();
