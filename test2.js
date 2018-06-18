@@ -44,6 +44,6 @@ for (var i = 0; i < arr.length; i++) {
 }
 
 */
-
+//myObj.hasOwnProperty("top"); // true
 // Change these values to test your function
 lookUpProfile("Akira", "likes");
