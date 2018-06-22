@@ -29,39 +29,14 @@ var contacts = [
 
 function lookUpProfile(name, prop){
 // Only change code below this line
-for (var i = 0; i < contacts.length; i++) {
-  if (contacts[i].firstName == name && contacts[i].hasOwnProperty("likes")) {
-    console.log("true");
-  }
-  else {
-    console.log("false");
-  }
-}
+    if (contacts[i].hasOwnProperty(name)) {
+        console.log("true");
+    }
+    else {
+        console.log("false");
+    }
 // Only change code above this line
 }
 
-//console.log(contacts[i]);
-
-/*
-for (var i = 0; i < arr.length; i++) {
-  for (var j = 0; j < arr[i].length; j++) {
-    console.log(arr[i][j]);
-  }
-}
-
-
-for (var i = 0; i < contacts.length; i++) {
-  console.log(contacts[i]);
-  for (var j = 0; j < contacts[i].length; j++) {
-    console.log(contacts[i][j]);
-  }
-}
-
-for (var i = 0; i < contacts.length; i++) {
-  console.log(contacts[i]);
-}
-
-*/
-//myObj.hasOwnProperty("top"); // true
 // Change these values to test your function
 lookUpProfile("Akira", "likes");
