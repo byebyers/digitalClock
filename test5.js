@@ -29,11 +29,16 @@ var contacts = [
 
 function lookUpProfile(name, prop){
 // Only change code below this line
-    if (contacts[i].hasOwnProperty(name)) {
-        console.log("true");
+  for (i = 0; i < contacts.length; i++) {
+    console.log(name);
+    for (j = 0; j < contacts[i].length; j++) {
+      if (contacts[i].hasOwnProperty(name)) {
+          console.log("true");
+      }
+      else {
+          console.log("false");
+      }
     }
-    else {
-        console.log("false");
     }
 // Only change code above this line
 }

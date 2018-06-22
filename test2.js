@@ -26,19 +26,40 @@ var contacts = [
     }
 ];
 
-
+/*
 function lookUpProfile(name, prop){
 // Only change code below this line
 for (var i = 0; i < contacts.length; i++) {
-  if (contacts[i].firstName == name && contacts[i].hasOwnProperty("likes")) {
-    console.log("true");
+  if (contacts[i].firstName == name && contacts[i].hasOwnProperty(prop)) {
+    console.log(contacts[i][prop]);
+  }
+  else if (contacts[i].firstName != name) {
+    console.log("No such contact");
   }
   else {
-    console.log("false");
+    console.log("No such property");
   }
 }
 // Only change code above this line
 }
+*/
+
+function lookUpProfile(name, prop){
+// Only change code below this line
+for (var i = 0; i < contacts.length; i++) {
+    if (contacts[i].firstName === name) {
+      if (contacts[i].hasOwnProperty(prop)) {
+        return contacts[i][prop];
+      }
+      else {
+        return "No such property";
+      }
+    }
+  }
+  return "No such contact" ;
+// Only change code above this line
+}
+
 
 //console.log(contacts[i]);
 
@@ -64,4 +85,4 @@ for (var i = 0; i < contacts.length; i++) {
 */
 //myObj.hasOwnProperty("top"); // true
 // Change these values to test your function
-lookUpProfile("Akira", "likes");
+lookUpProfile("Kristian", "lastName");
